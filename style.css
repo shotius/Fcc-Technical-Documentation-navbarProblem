@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+/* adjust global parts */
+body {
+  display: flex ;
+  
+}
+
+#navbar {
+  background: red;
+  width: 250px;
+  font-size: 1.5em;
+  position: fixed;
+}
+#main-doc {
+  margin: 10px 20px; 
+  overflow-y: hidden;
+  padding-left: 250px;
+}
+ /* adjust navbar */
+
+#nav-header {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 20px; 
+  border-bottom: 1px solid;
+}
+#nav-ul {
+  list-style-type: disc;
+  line-height: 1.5em;
+  height: 540px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 100px; 
+   
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 8px 0px 8px 20px; 
+}
+
+ /* main section */
+.main-section {
+  display: block;
+  margin: 10px 0px;
+  color: #black;
+}
+
+.main-section > header {
+  font-size: 3em;
+  padding: 5px;
+}
+.main-section > p {
+  font-size: 1.2em;
+  line-height: 1.1em;
+  margin: 15px 0px 15px 0px;
+}
+.main-section > ul {
+  padding: 10px 0px 10px 100px  ;
+  line-heigh: 10px; 
+}
+.main-section > ul > li {
+  padding-bottom: 4px  ;
+}
+
+.main-section > code {
+  display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.2em;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;  
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+}
+@media (max-width: 860px ) {
+  #main-doc {
+    padding-left: 190px;
+  }
+  #navbar {
+    width: 200px ;
+  }
+  #navbar > header {
+    font-size: 1.4em;
+  }
+  .main-section > code {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width:750px ) {
+  .main-section > code {
+    font-size: 0.7em;
+  }
+}
+/* for mobiles */
+@media (max-width: 600px) {
+  #navbar {
+    position: absolute;
+    left: -1000px;
+  }
+  #main-doc {
+    margin: 0; 
+    padding: 0 10px;
+  }
+  
+  .main-section > header {
+    font-size: 2em;
+    text-decoration: underline;
+    padding: 5px;
+  }
+  .main-section > p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  .main-section > ul {
+    padding-left: 30px ;
+  }
+  .main-section > code {
+    display: inline-block;
+    white-space: normal;
+    
+    font-size: 0.6em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  @media (max-width: 260px ){
+    .main-section >code {
+      word-break: break-all;
+    }
+  }
+  
+}
