@@ -32,7 +32,7 @@ body {
 #nav-ul {
   list-style-type: disc;
   line-height: 1.5em;
-  height: 100vh; 
+  height: calc(100vh-(27.2px+20px+20px+2px))px; 
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 100px; 
